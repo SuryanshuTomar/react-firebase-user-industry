@@ -30,3 +30,6 @@ npm/yarn run dev
 - zod
 - firebase
 - firebase-tools
+- typescript
+- vite
+- eslint
