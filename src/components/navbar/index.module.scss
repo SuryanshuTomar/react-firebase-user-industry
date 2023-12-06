@@ -1,0 +1,79 @@
+.navContainer {
+	background-color: bisque;
+	color: #242424;
+	height: 100%;
+	width: 95vw;
+	margin: 10px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	transition: display 0.1s ease-out;
+
+	.heading {
+		margin: 10px 40px;
+		font-size: 1.5rem;
+		transition: all 0.1s ease-out;
+		background-color: #242424;
+		color: beige;
+		padding: 5px 10px;
+		border-radius: 5px;
+	}
+
+	.authContainer {
+		width: 30%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.logout {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.login {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+	}
+
+	@media (max-width: 768px) {
+		justify-content: space-evenly;
+		margin: 0px;
+		width: 100vw;
+		border-radius: 0;
+		transition: display 0.1s ease-in;
+
+		.heading {
+			margin: 10px;
+			font-size: 1.5rem;
+			transition: all 0.1s ease-in;
+		}
+
+		.authContainer {
+			width: 40%;
+			justify-content: space-between;
+		}
+	}
+
+	@media (max-width: 480px) {
+		flex-direction: column;
+
+		.authContainer {
+			width: 100%;
+			justify-content: space-around;
+			margin: 10px;
+
+			.logout {
+				flex-direction: column;
+
+				h4 {
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}

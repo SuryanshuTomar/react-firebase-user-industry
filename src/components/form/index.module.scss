@@ -1,0 +1,126 @@
+.formContainer {
+	background-color: bisque;
+	color: #242424;
+	margin: 20px 0;
+	padding: 10px;
+	padding-bottom: 20px;
+	border-radius: 10px;
+	max-width: 95vw;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.formHeading {
+		font-size: 1.5rem;
+		margin: 10px 0;
+		max-width: 768px;
+		width: 100%;
+		text-align: center;
+	}
+
+	.inputContainer {
+		max-width: 768px;
+		width: 100%;
+		background-color: #242424;
+		color: beige;
+		padding: 10px;
+		margin: 10px;
+		border-radius: 5px;
+		display: flex;
+		flex-direction: column;
+
+		label {
+			font-size: 1.25rem;
+			margin: 5px;
+		}
+
+		input,
+		select {
+			line-height: 1.5rem;
+			margin: 5px;
+			color: beige;
+			border-width: 0px;
+			border-radius: 5px;
+			padding: 5px;
+			font-size: 1.25rem;
+
+			option {
+				padding: 2px 5px;
+				opacity: 50%;
+
+				&:checked {
+					opacity: 75%;
+					color: #242424;
+					background-color: beige;
+				}
+
+				&:hover {
+					color: #242424;
+					background-color: beige;
+				}
+			}
+
+			&::placeholder {
+				color: beige;
+				opacity: 50%;
+			}
+		}
+
+		p {
+			font-size: 1.25rem;
+			margin: 5px;
+
+			span {
+				margin-left: 5px;
+				font-style: italic;
+			}
+		}
+
+		hr {
+			opacity: 25%;
+			margin: 10px;
+		}
+
+		.termsContainer {
+			margin-top: 10px;
+		}
+
+		button {
+			margin: 10px;
+		}
+	}
+
+	.error {
+		font-size: 1.1rem;
+		color: red;
+	}
+
+	@media (max-width: 768px) {
+		max-width: 100vw;
+		width: 100%;
+		margin: 10px 0;
+
+		.formHeading {
+			font-size: 1.2rem;
+		}
+
+		.inputContainer {
+			width: 100%;
+
+			label {
+				font-size: 1rem;
+			}
+
+			input,
+			select {
+				line-height: 1.2rem;
+				font-size: 1rem;
+			}
+
+			p {
+				font-size: 1rem;
+			}
+		}
+	}
+}
