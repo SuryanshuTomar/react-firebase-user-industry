@@ -126,6 +126,7 @@ const Form = () => {
 			}
 		};
 		getCurrentUserData();
+		setSaveError("");
 	}, [user?.id, value, setValue]);
 
 	useEffect(() => {
